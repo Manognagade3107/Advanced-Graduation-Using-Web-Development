@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link  type="text/css" rel="stylesheet" href="button.css">
+    <title>Choice</title>
+</head>
+<style>
+        body 
+        {
+        height: 125vh;
+        margin-top: 80px;
+        padding: 30px;
+        background-size: cover;
+        font-family: sans-serif;
+        }
+        header {
+        background-image: url("https://media.istockphoto.com/id/1055012794/vector/vector-realistic-isolated-black-brick-wall-background-for-template-and-layout-decoration.jpg?s=1024x1024&w=is&k=20&c=QsqrFdKzAoibVLMB9WkZYUpJH18IYau8ehvczNPWtPM=");
+        position: fixed;
+        left: 0;
+        right: 0;
+        top: 0px;
+        height: 100px;
+        display: flex;
+        align-items: center;
+        box-shadow: 0 0 25px 0 black;
+        }
+        header * {
+        display: inline;
+        }
+        header li {
+        margin: 20px;
+        }
+        header li a {
+        color:rgb(192,192,192);
+        text-decoration: none;
+        }
+        
+    body{
+        background-image: url("1.jpg");
+        background-size: cover;
+        
+        
+    }
+    .center {
+        margin-bottom: 340px; /*this is to set the background image accordingly so dont change*/ 
+        /*padding-bottom: 20%;*/
+        padding-top: 20%;
+      }
+    a{
+        color:rgb(249, 231, 159);
+        background-color: transparent;
+        text-decoration: none;
+    }
+    .nat,.inter{
+        background-image: url("");
+    }
+    .head{
+        float:left;
+        position:relative;
+        text-align: left;
+        text-justify: auto;
+    }
+.profile {
+    font-size: 36px; /* adjust size as needed */
+    color: #fff; /* color of the profile symbol */
+    border: 2px solid #fff; /* border color */
+    border-radius: 50%; /* make it circular */
+    text-align: center;
+    line-height: 70px; /* adjust based on font size for vertical centering */
+    width: 70px; /* width and height for the symbol */
+    height: 70px;
+    position: absolute; /* Position the profile symbol */
+    top: 20px; /* Adjust the distance from the top */
+    right: 20px; /* Adjust the distance from the right */
+  }
+.logout-button {
+    display: none; /* Hide by default */
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: #ff0000;
+    color: #fff;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+
+</style>
+<body>
+    <table  class="center">
+        <tr>
+            <td width="800px" class="nat"><center><h1><a href="national.html" class="button medium alt icon solid fa-info-circle">NATIONAL COLLEGES</a></h1></center></td>
+            <td width="800px" class="inter"><center><h1><a href="international.html" class="button medium alt icon solid fa-info-circle">INTERNATIONAL COLLEGES</a></h1></center></td>
+
+        </tr>
+
+    </table>
+    <header>
+        <nav>
+        <ul>
+       
+        <li>
+        <a href="#"> <H1><strong> POST GRADUATION </strong></H1></a>
+        </li>
+        <li class="DECIDE">
+        <a href="decide.html"><h3> DECIDE </h3></a>
+        </li>
+<li class="home">
+            <a href="apply.html"><h3> APPLY </h3></a>
+            </li>
+<li class="home">
+            <a href="feedback.html"><h3> STUDENT FEEDBACK </h3></a>
+            </li>
+        <div class="profile" onclick="toggleLogout()">&#128100;
+ <i class="fas fa-user"></i>
+    <!-- Logout button -->
+    <button class="logout-button" onclick="logout()">Logout</button>
+</div>
+<script>
+// Function to toggle visibility of logout button
+function toggleLogout() {
+    var logoutBtn = document.querySelector('.logout-button');
+    logoutBtn.style.display = (logoutBtn.style.display === 'block' ? 'none' : 'block');
+}
+
+// Function to handle logout action
+function logout() {
+    // Redirect to another application
+    window.location.href = "index.html";
+}
+</script>
+       
+        </ul>
+        </nav>
+
+        </header>
+
+
+</body>
+</html>
